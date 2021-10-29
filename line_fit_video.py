@@ -1,4 +1,5 @@
 import numpy as np
+import shutil
 import cv2
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
@@ -101,7 +102,9 @@ def annotate_video(input_file, output_file):
 
 if __name__ == '__main__':
 	# Annotate the video
-	annotate_video('project_video.mp4', 'out.mp4')
+	output_video_filename = 'out_challenge.mp4'
+	annotate_video('challenge_video.mp4', output_video_filename)
+	shutil.move(output_video_filename, "annotated_videos/")
 
 	# Show example annotated image on screen for sanity check
 	img_file = 'test_images/test2.jpg'
