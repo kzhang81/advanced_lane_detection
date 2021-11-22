@@ -102,8 +102,8 @@ def annotate_video(input_file, output_file):
 
 if __name__ == '__main__':
 	# Annotate the video
-	output_video_filename = 'out_tfhrc_loop_jpeg_80.mp4'
-	annotate_video('tfhrc_loop_jpeg_80_front_center_processed.mp4', output_video_filename)
+	output_video_filename = '2021-10-22-13-40-13_pacifica_mclean_loop_front_center_annotated_5min.mp4'
+	annotate_video('2021-10-22-13-40-13_pacifica_mclean_loop_front_center_processed_5min.mp4', output_video_filename)
 	shutil.move(output_video_filename, "annotated_videos/")
 
 	# Show example annotated image on screen for sanity check
